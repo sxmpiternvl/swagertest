@@ -1,0 +1,39 @@
+<div>
+<div class="main">
+  <h1>SWAGER TEST</h1>
+  <h3>Enter your login credentials</h3>
+  <form action="">
+    <label for="first">
+      Username:
+    </label>
+    <input type="text"
+           id="first"
+           name="first"
+           [(ngModel)]="loginObj.EmailId"
+           placeholder="Enter your Username" required>
+
+    <label for="password">
+      Password:
+    </label>
+    <input type="password"
+           id="password"
+           name="password"
+           [(ngModel)]="loginObj.Password"
+           placeholder="Enter your Password" required>
+
+    <div class="wrap">
+      <button type="button"
+              (click)="onLogin()">
+        Submit
+      </button>
+    </div>
+  </form>
+  <p>Not registered?
+    <a href="#"
+       style="text-decoration: none;">
+      Create an account
+    </a>
+  </p>
+</div>
+</div>
+
